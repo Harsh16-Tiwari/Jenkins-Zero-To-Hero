@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'maven:3.9.6-eclipse-temurin-17'
+      image 'harsh16tiwari/maven-abhishek-docker-agent:v1'
       args '-v /var/run/docker.sock:/var/run/docker.sock --user root' // mount Docker socket to access the host's Docker daemon
     }
   }
